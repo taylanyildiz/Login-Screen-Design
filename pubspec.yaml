@@ -12,6 +12,13 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^9.1.0
+  get: ^4.3.8
+  socket_io_client: ^1.0.1
+  http: ^0.13.3
+  # flutter_gen: ^3.1.2
+
+
 
 dev_dependencies:
   flutter_test:
