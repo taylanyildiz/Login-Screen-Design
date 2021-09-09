@@ -8,25 +8,41 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  build_runner:
+  flutter_gen_runner:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  flutter_svg:
   font_awesome_flutter: ^9.1.0
   get: ^4.3.8
   socket_io_client: ^1.0.1
   http: ^0.13.3
-  # flutter_gen: ^3.1.2
-
-
+  lottie: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_gen:
+  output: lib/gen/
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+  
+  assets:
+    enabled: true
+  
+  fonts:
+    enabled: true
+
 flutter:
   uses-material-design: true
-  # assets:
-  #    - assets/
+  assets:
+     - assets/icons/
   # fonts:
   #   - family: Schyler
   #     fonts:
